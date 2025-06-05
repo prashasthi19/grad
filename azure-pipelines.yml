@@ -7,13 +7,12 @@ trigger:
 - master
 
 pool:
-  name: Deafult
+  name: Default
 
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-
 - script: gradle build
-  displayName: 'Build with gradle'
+  displayName: 'Build with Maven'  
 - script: gradle run
   displayName: 'Running jar'
